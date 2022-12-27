@@ -12,28 +12,75 @@
 
       gtag('config', 'G-KWTSGV8GM6');
     </script>
+    <style>
+      @import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+      * {
+        font-family: 'Jeju Gothic', sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+      h1 {
+        color:black;
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        margin: 0;
+        padding: 20px;
+      }
+      ol {
+        font-size: 18px;
+        line-height: 25px;
+        border-right: 1px solid lightgray;
+        width: 110px;
+        margin: 0;
+        padding: 20px;
+        padding-left: 33px;
+      }
+      #active {
+        color:red;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #contents h2 {
+        color:green;
+        font-size: 28px;
+        padding-left: 50px;
+        margin-top: 30px;
+      }
+      #contents p {
+        padding-left: 70px;
+        line-height: 25px;
+      }
+    </style>
   </head>
   <body>
     <h1><a href="index.html">최근 갔던 맛집들</a></h1>
-    <ol>
-      <li><a href="chakyung.html">차경</a></li>
-      <li><a href="dozen.html">더즌오이스터</a></li>
-      <li><a href="guwol.html">구월의 소철</a></li>
-      <li><a href="ilsang.html">일상정원</a></li>
-      <li><a href="itzurova.html">이츠로바</a></li>
-      <li><a href="nambak.html">남박</a></li>
-    </ol>
-    <h2>남박</h2>
-    <p><strong>주소</strong> : 서울특별시 용산구 한강대로76길 11-31
-    <br><strong>음식 종류</strong> : 베트남음식
-    <br><strong>대표 메뉴</strong> : 한우 쌀국수, 얼큰 한우 쌀국수
-    <br><br><img src="nambak.jpeg" width="500">
-    </p>
-    <p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ITeq8ZKwT38"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </p>
+    <div id="grid">
+      <ol>
+        <li><a href="chakyung.html">차경</a></li>
+        <li><a href="dozen.html">더즌오이스터</a></li>
+        <li><a href="guwol.html">구월의 소철</a></li>
+        <li><a href="ilsang.html">일상정원</a></li>
+        <li><a href="itzurova.html">이츠로바</a></li>
+        <li><a href="nambak.html" id="active">남박</a></li>
+      </ol>
+      <div id="contents">
+        <h2># 남박</h2>
+        <p><strong>주소</strong> : 서울특별시 용산구 한강대로76길 11-31
+        <br><strong>음식 종류</strong> : 베트남음식
+        <br><strong>대표 메뉴</strong> : 한우 쌀국수, 얼큰 한우 쌀국수
+        <br><br><img src="nambak.jpeg" width="500">
+        </p>
+        <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/ITeq8ZKwT38"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </div>
+    </div>
     <p>
       <div id="disqus_thread"></div>
       <script>
