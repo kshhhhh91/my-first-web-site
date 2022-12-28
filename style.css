@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+* {
+  font-family: 'Jeju Gothic', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  color:black;
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid lightgray;
+  margin: 0;
+  padding: 20px;
+}
+ol {
+  font-size: 18px;
+  line-height: 25px;
+  border-right: 1px solid lightgray;
+  width: 110px;
+  margin: 0;
+  padding: 20px;
+  padding-left: 33px;
+}
+#active {
+  color:red;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#contents h2 {
+  color:green;
+  font-size: 28px;
+  padding-left: 50px;
+  margin-top: 30px;
+}
+#contents p {
+  padding-left: 70px;
+  line-height: 25px;
+}
+#idx-contents {
+  padding-left: 50px;
+  font-size: 23px;
+  margin-top: 40px;
+}
+@media (max-width: 730px) {
+  h1 {
+    border-bottom: none;
+  }
+  #grid {
+    display: block;
+  }
+  ol {
+    border-right: none;
+  }
+}
